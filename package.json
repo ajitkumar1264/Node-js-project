@@ -1,0 +1,15 @@
+{
+  "name": "port",
+  "version": "1.0.0",
+  "description": "hii this for entertienment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aj",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.2.0"
+  }
+}

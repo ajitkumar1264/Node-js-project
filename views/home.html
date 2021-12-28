@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0px;
+    background-color: rgb(21, 41, 70);
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-12/css/all.min.css"
+  integrity="sha512-pn4RwKFKdSvaTRSYO5WIUGz89e1tJvWWUGRIBym1/k467SuMMjKKw/X5TXJYp2+WLmHumHivCJ2JAJppXF9SoA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+<body  class="text-gray-400 bg-gray-900 body-font" >
+
+  <nav class="bg-gray-800" style="padding-top: 5px; padding-bottom: 2px;">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+       
+        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex-shrink-0 flex items-center">
+            
+           <img class="hidden lg:block h-11 w-auto"
+            src="eagle-shield.png" alt="Workflow"> 
+            <h2 class="text-gray-300 text-sm flex space-x-3 sm:ml-2" style="font-size:150%; font-family: 'Times New Roman', Times, serif;">vaghela</h2>
+          </div>
+          <div class="hidden sm:block sm:ml-6">
+            <div class="flex space-x-5">
+              
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="#" class=" hover:bg-gray-900 text-gray-300 px-8 py-2 rounded-md text-sm font-medium"
+                aria-current="page">Dashboard</a>
+
+              <a href="about"
+                class="text-gray-300 hover:bg-gray-900 hover:text-white px-8 py-2 rounded-md text-sm font-medium">about</a>
+
+              <a href="project"
+                class="text-gray-300 hover:bg-gray-900 hover:text-white px-8 py-2 rounded-md text-sm font-medium">Projects</a>
+
+              <a href="contact"
+                class="text-gray-300 hover:bg-gray-900 hover:text-white px-8 py-2 rounded-md text-sm font-medium">Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        </div>
+      </div>
+    </div>
+    </div>
+   
+  </nav>
+
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center" style="padding-top: 0px;">
+      <div style="padding-top: 100px; margin-left: 50px; margin-right: 0px;" class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap-m-12">
+          <div class="p-12 md:w-1/2 flex flex-col items-start">
+            <span
+              class="inline-block py-1 px-2 rounded bg-gray-800 text-gray-400 text-opacity-75 text-xs font-medium tracking-widest">CATEGORY</span>
+            <h2 class="sm:text-3xl text-2xl title-font font-medium text-white mt-4 mb-4">HII 👋,My Name is vaghela
+              Ajitkumar</h2>
+            <p class="leading-relaxed mb-8">Right Now,<br> i am computer student in goverment engineering collage
+              rajkot.Currently I am Learing node.js and Mongo db for making Beautiful.
+              <span id="goa" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+                ea odit, blanditiis laboriosam aliquam deleniti similique dolor facere.</span></p>
+            <div
+            
+              class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-800 border-opacity-75 mt-auto w-full">
+              <a class="text-indigo-400 inline-flex items-center" onclick="raj()"  id="learn">Learn More
+                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+
+              <span
+                class="text-gray-500 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-800">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>1.2K
+              </span>
+              <span class="text-gray-500 inline-flex items-center leading-none text-sm">
+                <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"
+                  stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                  </path>
+                </svg>6
+              </span>
+            </div>
+
+
+
+            <a class="inline-flex items-center">
+              <img alt="blog" src="https://dummyimage.com/104x104"
+                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+              <span class="flex-grow flex flex-col pl-4">
+                <span class="title-font font-medium text-white">Vaghela Ajitkumar</span>
+                <span class="text-gray-500 text-xs tracking-widest mt-0.5">WEB DEVELOPER</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full" style="margin-right: 70px;">
+        <a href="ima"><img class="object-cover object-center rounded"  alt="hero" src="hard.svg" height="700"
+            width="800"></a>
+      </div>
+    </div>
+  </section>
+  <script>
+
+    function raj() {
+      const aj = document.getElementById('goa');
+      const bj = document.getElementById('learn');
+
+      if (aj.style.display === 'none') {
+        aj.style.display = 'inline';
+        bj.innerHTML="Learn Less ->";
+      }
+      else {
+        aj.style.display = 'none';
+        bj.innerHTML="Learn More ->";
+      }
+
+
+    }
+  </script>
+
+</body>
+
+</html>
